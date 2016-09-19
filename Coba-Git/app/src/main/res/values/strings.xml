@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tugas1</string>
+    <string name="biodata">BIODATA</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="nim">NIM</string>
+    <string name="angkatan">Angkatan</string>
+</resources>
