@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">tugas1mopro</string>
+    <string name="login_with_facebook">Login with facebook</string>
+    <string name="regist">regist</string>
+    <string name="login">login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login_with_gmail">login with gmail</string>
+    <string name="login_anda_berhasil">Login anda berhasil!</string>
+    <string name="register_form">Register Form</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="angkatan">Angkatan</string>
+    <string name="nim">NIM</string>
+    <string name="cancel">Cancel</string>
+    <string name="register">Register</string>
 </resources>

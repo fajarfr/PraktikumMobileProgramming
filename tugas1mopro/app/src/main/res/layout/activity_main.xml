@@ -8,17 +8,19 @@
     <ImageView
         android:id="@+id/iv"
         android:layout_width="115dp"
-        android:layout_height="115dp"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="15dp"
+        android:src="@drawable/navi"/>
 
     <TextView
         android:id="@+id/tvusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_below="@id/iv"
-        android:text="Username"
+        android:text="@string/username"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:gravity="center"/>
     
@@ -26,7 +28,6 @@
         android:id="@+id/etusername"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_below="@id/tvusername"
         android:gravity="center"
         android:layout_marginLeft="40dp"
@@ -34,10 +35,11 @@
     
     <TextView
         android:id="@+id/tvpassword"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
-        android:layout_marginTop="20dp"
-        android:text="Password"
+        android:layout_marginTop="5dp"
+        android:text="@string/password"
         android:textSize="25sp"
         android:gravity="center"
         android:layout_below="@id/etusername"/>
@@ -45,8 +47,8 @@
     <EditText
         android:id="@+id/etpassword"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tvpassword"
         android:gravity="center"
         android:layout_marginLeft="40dp"
@@ -56,11 +58,57 @@
         android:id="@+id/btlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
+        android:text="@string/login"
+        android:layout_below="@id/etpassword"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/btregist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regist"
         android:layout_below="@id/etpassword"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="40dp"/>
+        android:layout_marginRight="80dp"
+        android:background="@color/white"/>
 
+    <Button
+        android:id="@+id/btfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btlogin"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="@string/login_with_facebook"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/btgmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btfb"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_with_gmail"
+        android:background="@color/white"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/bttwitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btgmail"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="login with twitter"/>
 
 
 
