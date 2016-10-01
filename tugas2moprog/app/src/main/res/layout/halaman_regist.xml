@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORM REGISTER "
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:id="@+id/JudulRegister" />
+
+    <EditText
+        android:id="@+id/edtnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukan nama"
+        android:layout_below="@+id/JudulRegister"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout">
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtnim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp"
+        android:hint="masukan nim"
+        android:layout_below="@+id/edtnama"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+    <EditText
+        android:id="@+id/edtangkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp"
+        android:hint="angkatan"
+        android:layout_below="@+id/edtnim"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp"
+        android:hint="masukan username"
+        android:layout_below="@+id/edtangkatan"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+    <EditText
+        android:id="@+id/edtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingTop="15sp"
+        android:hint="masukan password"
+        android:layout_below="@+id/edtusername"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/edtpass"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/btnCancel" />
+
+        <Button
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:id="@+id/btnRegister1" />
+    </LinearLayout>
+
+
+</RelativeLayout>
