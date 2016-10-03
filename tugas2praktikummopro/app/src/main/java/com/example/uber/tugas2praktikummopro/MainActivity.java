@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
 
+
+
                 /*Intent itangkap = new Intent(IntentActivity.this, TangkapIntent.class);
                 itangkap.putExtra("strnim", strnim);
                 itangkap.putExtra("strnama", strnama);
